@@ -40,13 +40,16 @@
 #sidebar ul {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
   
 }
 
-#footer{
+#footer footer{
 
 display: flex;
+position: relative;
 justify-content:flex-end ;
-
+top: 250px
 }
 
