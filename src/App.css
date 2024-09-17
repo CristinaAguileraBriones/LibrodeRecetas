@@ -1,0 +1,52 @@
+#root {
+  
+  margin: 0 ;
+  padding: 0;
+  text-align: center;
+  
+}
+#navegador nav{
+  border: 5px solid white;
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  justify-content: space-between;
+  bottom: 310px;
+  width: 100vw; /* 100% del ancho de la ventana */
+  left: 0; /* Asegúrate de que el nav comience desde el borde izquierdo */
+  margin: 0; /* Elimina cualquier margen por defecto */
+  box-sizing: border-box; /* Asegura que el borde se incluya dentro del ancho */
+
+  
+}
+#logo {
+  
+  display: flex;
+  justify-content: flex-start;
+  width: 120px;
+  height: 120px;
+}
+
+#sidebar{
+  display: flex;
+  position: relative;
+  bottom: 295px; 
+  margin-left: 20px; 
+}
+#sidebar ul li{
+  display: flex;
+ justify-content: space-between;
+}
+#sidebar ul {
+  display: flex;
+  flex-direction: row;
+  
+}
+
+#footer{
+
+display: flex;
+justify-content:flex-end ;
+
+}
+
