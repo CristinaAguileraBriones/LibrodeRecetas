@@ -12,7 +12,7 @@ function RecetasList() {
   
 
   return ( 
-      <ul>
+      <ul className="contenedor-lista">
         {listaRecetas.map((cadaReceta, index) => (
           <li key={cadaReceta.id} className="card-comida"> {/* Usar cadaReceta.id como key */}
             <h1>{cadaReceta.name}</h1>
