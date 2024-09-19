@@ -4,21 +4,21 @@
   padding: 0;
   text-align: center;
   
-}
-#navegador nav{
-  border: 5px solid white;
-  display: flex;
-  position: relative;
-  flex-direction: row;
-  justify-content: space-between;
-  bottom: 310px;
-  width: 100vw; /* 100% del ancho de la ventana */
-  left: 0; /* Asegúrate de que el nav comience desde el borde izquierdo */
-  margin: 0; /* Elimina cualquier margen por defecto */
-  box-sizing: border-box; /* Asegura que el borde se incluya dentro del ancho */
-
   
 }
+nav {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  justify-content: space-between;
+  width: 100vw; /* 100% del ancho de la ventana (no del contenedor, sino de la ventana entera) */
+  margin: 0; /* Elimina cualquier margen por defecto */
+  box-sizing: border-box; /* Asegura que el borde se incluya dentro del ancho */
+  border: 2px solid black;
+  padding:10px;
+  
+}
+
 #logo {
   
   display: flex;
@@ -53,3 +53,20 @@ justify-content:flex-end ;
 top: 250px
 }
 
+
+.card-comida{
+ 
+  border: 2px solid black;
+  border-radius: 30px;
+  margin: 20px;
+  list-style: none;
+  padding-bottom: 20px;
+width: 500px;
+}
+
+.contenedor-lista{
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+}
