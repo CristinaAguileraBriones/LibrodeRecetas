@@ -12,13 +12,11 @@ function RecetasList() {
   }
 
   return (
-    <ul className="contenedor-lista">
+    <div className="contenedor-lista">
       {listaRecetas.map((cadaReceta, index) => (
-        <li>          
-          <ItemCard cadaReceta={cadaReceta} handleDelete={handleDelete} />
-        </li>
+          <ItemCard key={index} cadaReceta={cadaReceta} handleDelete={handleDelete} />
       ))}
-    </ul>
+    </div>
   );
 }
 

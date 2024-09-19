@@ -1,9 +1,11 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 
 function ItemCard({cadaReceta, handleDelete}) {
     
   return (
-    <div>
+    <Link to={`/detalles/${cadaReceta.id}`}> 
+        <div>
         <li key={cadaReceta.id} className="card-comida"> {/* Usar cadaReceta.id como key */}
             <h1>{cadaReceta.name}</h1>
             <img
@@ -24,7 +26,8 @@ function ItemCard({cadaReceta, handleDelete}) {
               Delete
             </button>
           </li>
-    </div>
+        </div>
+    </Link>
   )
 }
 
