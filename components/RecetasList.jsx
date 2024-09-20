@@ -13,6 +13,7 @@ function RecetasList(props) {
   }
 
   return (
+    
     <div>
         <h1>User id: {props.recetas.id}</h1>
         <h3>{props.recetas.name}</h3>
