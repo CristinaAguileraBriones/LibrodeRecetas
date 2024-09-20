@@ -1,16 +1,20 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Sidebar() {
   return (
     <div id="sidebar">
       <h2>Menu</h2>
       <ul>
-        <li>          
-          <a href="#inicio">Inicio</a>
+        <li>
+          <Link to="/">
+            <a href="#inicio">Inicio</a>
+          </Link>
         </li>
         <li>
-          
-          <a href="#AcercaDe">Acerca de</a>
+          <Link to="/acercade">
+            <a href="#AcercaDe">Acerca de</a>
+          </Link>
         </li>
       </ul>
     </div>

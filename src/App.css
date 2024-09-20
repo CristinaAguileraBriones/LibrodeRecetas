@@ -32,6 +32,7 @@ nav {
   position: relative;
   bottom: 295px; 
   margin-left: 20px; 
+  margin-top: 300px;
 }
 #sidebar ul li{
   display: flex;
