@@ -7,7 +7,9 @@ import DetallesReceta from "../components/DetallesReceta.jsx"
 import NotFound from "../components/NotFound.jsx"
 import AcerDe from "../components/AcerDe.jsx";
 import {Routes, Route} from 'react-router-dom';
-//import recetas from "../components/recetas.json"
+import { useState } from "react";
+
+import recetas from "../components/recetas.json"
 
 /*
 
@@ -15,10 +17,11 @@ import {Routes, Route} from 'react-router-dom';
 idReceta la usaremos para encontrar el elemento que necesitamos
 
 */
-//   const [listaRecetas, setListaRecetas] = useState(recetas);
 
 
 function App() {
+  const [listaRecetas, setListaRecetas] = useState(recetas);
+
   return (
     <>
     <Navegador/>
@@ -29,8 +32,7 @@ function App() {
       <Route path={"/detalles/:idReceta"} element={<DetallesReceta/>} /> 
       <Route path={"/acercade"} element={<AcerDe />} />
       <Route path={"*"} element= {<NotFound/>} />
-
-     
+      <Route path={"/detalles/recetaslist"} element= {<RecetasList listaRecetas={listaRecetas} setListaRecetas={setListaRecetas}/>} />
 
     </Routes> 
     

@@ -1,9 +1,9 @@
 import React from "react";
 import recetas from "../components/recetas.json";
-import { useState } from "react";
 import ItemCard from "../components/ItemCard.jsx";
 
-function RecetasList() {
+
+function RecetasList(props) {
 
   //const [listaRecetas, setListaRecetas] = useState(recetas);
 //!estamos mandando la const a app.jsx, por el momento no borramos
@@ -13,11 +13,14 @@ function RecetasList() {
   }
 
   return (
-    <div className="contenedor-lista">
-      {listaRecetas.map((cadaReceta, index) => (
-          <ItemCard key={index} cadaReceta={cadaReceta} handleDelete={handleDelete} />
-      ))}
-    </div>
+    <div>
+        <h1>User id: {props.recetas.id}</h1>
+        <h3>{props.recetas.name}</h3>
+        <p>{props.recetas.location}</p>
+      </div>
+
+   
+
   );
 }
 
