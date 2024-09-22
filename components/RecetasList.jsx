@@ -1,5 +1,6 @@
 import React from "react";
-import recetas from "../components/recetas.json";
+//import recetas from "../components/recetas.json";
+//!Verificar si se necesito el Json en este componento o quitarlo
 import ItemCard from "../components/ItemCard.jsx";
 
 
@@ -15,8 +16,8 @@ function RecetasList(props) {
   return (
     
     <div>
-        <h1>User id: {props.recetas.id}</h1>
-        <h3>{props.recetas.name}</h3>
+        {/*<h1>Receta : {props.recetas.id}</h1>*/}
+        <h1>{props.recetas.name}</h1>
         <p>{props.recetas.location}</p>
       </div>
 

@@ -20,8 +20,8 @@ idReceta la usaremos para encontrar el elemento que necesitamos
 
 
 function App() {
-  const [listaRecetas, setListaRecetas] = useState(recetas);
-
+  const [RecetasList, setRecetasList] = useState(recetas);
+//!confirmar cual es el estado que debe tomar para optener los datos de recetas( tengo dudas "Sam")
   return (
     <>
     <Navegador/>
@@ -31,8 +31,9 @@ function App() {
       <Route path={"/"} element={<Home/>} />  
       <Route path={"/detalles/:idReceta"} element={<DetallesReceta/>} /> 
       <Route path={"/acercade"} element={<AcerDe />} />
-      <Route path={"*"} element= {<NotFound/>} />
       <Route path={"/detalles/recetaslist"} element= {<RecetasList recetas={recetas} />} />
+
+
 
     </Routes> 
     
