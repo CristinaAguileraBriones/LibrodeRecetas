@@ -8,7 +8,7 @@ import NotFound from "../components/NotFound.jsx"
 import AcerDe from "../components/AcerDe.jsx";
 import {Routes, Route} from 'react-router-dom';
 import { useState } from "react";
-
+import Home from "../components/Home.jsx";
 import recetas from "../components/recetas.json"
 
 /*
@@ -28,11 +28,11 @@ function App() {
     <Sidebar />
  
     <Routes>
-      <Route path={"/"} element={<Navegador/>} />  
+      <Route path={"/"} element={<Home/>} />  
       <Route path={"/detalles/:idReceta"} element={<DetallesReceta/>} /> 
       <Route path={"/acercade"} element={<AcerDe />} />
       <Route path={"*"} element= {<NotFound/>} />
-      <Route path={"/detalles/recetaslist"} element= {<RecetasList listaRecetas={listaRecetas} setListaRecetas={setListaRecetas}/>} />
+      <Route path={"/detalles/recetaslist"} element= {<RecetasList recetas={recetas} />} />
 
     </Routes> 
     

@@ -11,7 +11,7 @@ nav {
   flex-direction: row;
   position: relative;
   justify-content: space-between;
-  width: 100vw; /* 100% del ancho de la ventana (no del contenedor, sino de la ventana entera) */
+  width: 98vw; /* 100% del ancho de la ventana (no del contenedor, sino de la ventana entera) */
   margin: 0; /* Elimina cualquier margen por defecto */
   box-sizing: border-box; /* Asegura que el borde se incluya dentro del ancho */
   border: 2px solid black;
@@ -30,9 +30,9 @@ nav {
 #sidebar{
   display: flex;
   position: relative;
-  bottom: 295px; 
+  bottom: 290px; 
   margin-left: 20px; 
-  margin-top: 300px;
+  margin-top: 400px;
 }
 #sidebar ul li{
   display: flex;
