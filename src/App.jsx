@@ -6,9 +6,9 @@ import RecetasList from "../components/RecetasList.jsx";
 import DetallesReceta from "../components/DetallesReceta.jsx"
 import NotFound from "../components/NotFound.jsx"
 import AcerDe from "../components/AcerDe.jsx";
+
 import {Routes, Route} from 'react-router-dom';
 import { useState } from "react";
-import Home from "../components/Home.jsx";
 import recetas from "../components/recetas.json"
 
 /*
@@ -20,7 +20,7 @@ idReceta la usaremos para encontrar el elemento que necesitamos
 
 
 function App() {
-  const [RecetasList, setRecetasList] = useState(recetas);
+  const [recetasList, setRecetasList] = useState(recetas);
 //!confirmar cual es el estado que debe tomar para optener los datos de recetas( tengo dudas "Sam")
   return (
     <>
@@ -28,10 +28,11 @@ function App() {
     <Sidebar />
  
     <Routes>
-      <Route path={"/"} element={<Home/>} />  
-      <Route path={"/detalles/:idReceta"} element={<DetallesReceta/>} /> 
+      <Route path={"/"} element={<RecetasList recetasList={recetasList} setRecetasList={setRecetasList}/>} />  
+      <Route path={"/detalles/:idReceta"} element={<DetallesReceta recetasList={recetasList} />} /> 
       <Route path={"/acercade"} element={<AcerDe />} />
-      <Route path={"/detalles/recetaslist"} element= {<RecetasList recetas={recetas} />} />
+
+      <Route path={"*"} element={<NotFound/>} />
 
 
 

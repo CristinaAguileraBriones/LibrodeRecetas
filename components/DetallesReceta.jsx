@@ -1,36 +1,28 @@
-import { useParams } from 'react-router-dom';
-import recetas from "../components/recetas.json";
+import { useParams, Link } from "react-router-dom";
 
 
-
-
-function DetallesReceta () {
-  const id = useParams()
-  console.log("Información después de /detalles/", id)
-
-  const foundReceta= recetas.find((eachReceta) => eachReceta.id === id) 
-
+function DetallesReceta({ recetasList }) {
+  // const {idReceta} = useParams();
+ 
+  const contenidoDeUseParams = useParams();
+  const idDeLaReceta = contenidoDeUseParams.idReceta
   
-  //2 Con la información del Id de la receta, podemos solicitar la receta que queremos mostrar.
-  // Filter: dame el elemento cuyo id coincide con idReceta (que nos llegó desde el URL)
+
+  const foundReceta = recetasList.find((eachReceta) => eachReceta.id === idDeLaReceta);
+  
+  
+
+ 
 
   return (
     <div>
-      <h2>Descripcion de la receta: </h2>
-      
-      
-        return (
-          <p key={eachReceta.id}> 
-            <Link to={`/detalles/${foundReceta.id}`}>{foundReceta.name}
-            </Link>
-          </p>
-        )
+      <h2>Para saber la receta busca en Google:</h2>
+      <h1> Receta de {foundReceta.name} </h1>
+      <h2>🤪 🤣 </h2>
+
      
-
     </div>
-
-  )
-
+  );
 }
 
 export default DetallesReceta;
