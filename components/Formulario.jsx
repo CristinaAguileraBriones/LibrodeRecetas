@@ -5,7 +5,6 @@ function Formulario({recetasList, setRecetasList }) {
   const [name, setNombreReceta] = useState("");
   const [image, setImagenReceta]= useState("");
   const [calories, setCaloriasReceta] = useState(0);
- //const [infoReceta, setInfoReceta] = useState("");
   const [servings, setServingsReceta]= useState(0);
 {/*console.log(recetasList)*/}
   const handleNombreInput=(event)=>setNombreReceta(event.target.value)
@@ -33,7 +32,7 @@ function Formulario({recetasList, setRecetasList }) {
     <div className="formulario">
       <form onSubmit={handleAddRecipe}>
         <div>
-          <label>Nombre de la receta:</label>
+          <label>Receta: </label>
           <input
             onChange={handleNombreInput}
             value={name}

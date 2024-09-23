@@ -9,12 +9,16 @@ function DetallesReceta({ recetasList }) {
   
 
   const foundReceta = recetasList.find((eachReceta) => eachReceta.id === idDeLaReceta);
+  
+  
 
  
 
   return (
     <div>
-      <h2>(Googlea la dereceta bello){foundReceta.name} </h2>
+      <h2>Para saber la receta busca en Google:</h2>
+      <h1> Receta de {foundReceta.name} </h1>
+      <h2>🤪 🤣 </h2>
 
      
     </div>

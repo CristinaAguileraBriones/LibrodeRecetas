@@ -29,7 +29,7 @@ function App() {
  
     <Routes>
       <Route path={"/"} element={<RecetasList recetasList={recetasList} setRecetasList={setRecetasList}/>} />  
-      <Route path={"/detalles/:idReceta"} element={<DetallesReceta recetasList={recetasList}/>} /> 
+      <Route path={"/detalles/:idReceta"} element={<DetallesReceta recetasList={recetasList} />} /> 
       <Route path={"/acercade"} element={<AcerDe />} />
 
       <Route path={"*"} element={<NotFound/>} />
