@@ -44,9 +44,9 @@ function FormActualizar({recetasList, setRecetasList}) {
      
 
   return (
-    <div>
+    <div className="formulario2">
         <form onSubmit={handleEditRecipe}>
-        <div>
+        <div className="input">
           <label>Receta: </label>
           <input
             onChange={handleNombreInput}
@@ -56,7 +56,7 @@ function FormActualizar({recetasList, setRecetasList}) {
             placeholder="Nombre receta"
           />
         </div>
-        <div>
+        <div className="input">
           <label>Imagen: </label>
           <input
             onChange={handleImagenInput}
@@ -66,7 +66,7 @@ function FormActualizar({recetasList, setRecetasList}) {
             placeholder="Url"
           />
         </div>
-        <div>
+        <div className="input">
           <label>Calorias: </label>
           <input
             onChange={handleCaloriaInput}
@@ -77,7 +77,7 @@ function FormActualizar({recetasList, setRecetasList}) {
           />
         </div>
         
-        <div>
+        <div className="input">
           <label>Servings:</label>
           <input
             onChange={handleServingsInput}

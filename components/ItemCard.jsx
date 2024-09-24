@@ -30,7 +30,7 @@ function ItemCard({ cadaReceta, handleDelete }) {
         </Link>
         <button
           onClick={() => handleDelete(cadaReceta.id)}
-          style={{ backgroundColor: "red" }}
+          style={{ backgroundColor: "#E35A5A" }}
         >
           Delete
         </button>

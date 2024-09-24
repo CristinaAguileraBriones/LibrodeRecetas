@@ -4,10 +4,10 @@
   padding: 0;
   text-align: center;
   background-image: url("../src/assets/Background.jpg");
-   background-size: contain;
+   background-size: auto;
    background-position: center;
-   background-repeat: no-repeat;
-   height: 400vh;
+   
+   
   
 }
 nav {
@@ -18,8 +18,9 @@ nav {
   width: 98vw; /* 100% del ancho de la ventana (no del contenedor, sino de la ventana entera) */
   margin: 0; /* Elimina cualquier margen por defecto */
   box-sizing: border-box; /* Asegura que el borde se incluya dentro del ancho */
-  border: 2px solid black;
+  ;
   padding:10px;
+  color:#E35A5A;
   
 }
 
@@ -65,19 +66,23 @@ border-radius:15px;
 display: flex;
 position: relative;
 justify-content:flex-end ;
-top: 250px
+top: 250px;
+background-color: #E35A5A;
+
+height: 250px;
 }
 
 
+
 .card-comida{
- 
-  border: 2px solid black;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.2); 
   border-radius: 30px;
   margin: 20px;
   list-style: none;
   padding-bottom: 20px;
 width: 500px;
-background-color: white;
+background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("../src/assets/cubierto.png") no-repeat;
+
 
 
 }
@@ -88,14 +93,40 @@ background-color: white;
   flex-direction: column;
   align-items: center;
   bottom: 350px;
+  display: grid; 
+grid-template-columns: repeat(3, 1fr); /* 3 columnas del mismo tamaño */
+ gap: 10px; /* Espacio entre columnas */
 
 }
 .formulario{
-  border: 2px solid black;
-  width:50%;
-
+  border: 2px solid #E35A5A;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.2); 
+  width:70%;
+  border-radius: 20px;
+  padding: 15px;
+  background-color: rgba(227, 90, 90, 0.8);
+  }
+.formulario2{
+  border: 2px solid #E35A5A;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.2); 
+  width:30%;
+  border-radius: 20px;
+  padding: 15px;
+  background-color: rgba(227, 90, 90, 0.8);
+  margin-left: 35%;
 }
+
 .input{
  display: flex;
  position: relative;
+ justify-content: center;
+ margin:15px;
+}
+.input label{
+  padding: 10px
+}
+.enlaceF{
+  font-size: 30px;
+  margin:150px;
+  color:white;
 }

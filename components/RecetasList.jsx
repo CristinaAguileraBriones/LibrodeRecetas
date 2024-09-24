@@ -20,7 +20,7 @@ function RecetasList({recetasList, setRecetasList}) {
 
   return (
     <div className="contenedor-lista">
-      <h2>Añade nueva receta</h2>
+      <h2>Añade tu nueva receta :</h2>
       <Formulario recetasList={recetasList} setRecetasList={setRecetasList}/>
       
       {recetasList.map((cadaReceta, index) => (
