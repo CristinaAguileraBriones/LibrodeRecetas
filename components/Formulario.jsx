@@ -31,7 +31,7 @@ function Formulario({recetasList, setRecetasList }) {
   return (
     <div className="formulario">
       <form onSubmit={handleAddRecipe}>
-        <div>
+        <div className="input">
           <label>Receta: </label>
           <input
             onChange={handleNombreInput}
@@ -42,7 +42,7 @@ function Formulario({recetasList, setRecetasList }) {
           />
         </div>
 
-        <div>
+        <div className="input">
           <label>Imagen: </label>
           <input
             onChange={handleImagenInput}
@@ -52,7 +52,7 @@ function Formulario({recetasList, setRecetasList }) {
             placeholder="Url"
           />
         </div>
-        <div>
+        <div className="input">
           <label>Calorias: </label>
           <input
             onChange={handleCaloriaInput}
@@ -63,7 +63,7 @@ function Formulario({recetasList, setRecetasList }) {
           />
         </div>
         
-        <div>
+        <div className="input">
           <label>Servings:</label>
           <input
             onChange={handleServingsInput}
