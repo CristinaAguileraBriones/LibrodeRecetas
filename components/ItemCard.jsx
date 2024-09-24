@@ -13,14 +13,14 @@ function ItemCard({ cadaReceta, handleDelete }) {
         {" "}
         {/* Usar cadaReceta.id como key */}
         <Link to={`/detalles/${cadaReceta.id}`}>
-          <h1>{cadaReceta.name}</h1>
+          <h1 style={{color:"#E35A5A"}}>{cadaReceta.name}</h1>
           <img
             src={cadaReceta.image}
             alt="imagen comida"
             style={{ width: "200px" }}
           />
-          <h4>Calories: {cadaReceta.calories}</h4>
-          <h5>Servings: {cadaReceta.servings}</h5>
+          <h4 style={{color:"#E35A5A"}}>Calories: {cadaReceta.calories}</h4>
+          <h5 style={{color:"#E35A5A"}}>Servings: {cadaReceta.servings}</h5>
 
           {cadaReceta.calories >= 200 ? (
             <p style={{ color: "red" }}>⚠️ High in calories</p>
