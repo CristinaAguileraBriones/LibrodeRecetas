@@ -7,6 +7,8 @@ import Formulario from "../components/Formulario.jsx";
 
 
 
+
+
 function RecetasList({recetasList, setRecetasList}) {
 
   //const [listaRecetas, setListaRecetas] = useState(recetas);
@@ -20,6 +22,7 @@ function RecetasList({recetasList, setRecetasList}) {
     <div className="contenedor-lista">
       <h2>Añade nueva receta</h2>
       <Formulario recetasList={recetasList} setRecetasList={setRecetasList}/>
+      
       {recetasList.map((cadaReceta, index) => (
           <ItemCard key={index} cadaReceta={cadaReceta} handleDelete={handleDelete} />
       ))}

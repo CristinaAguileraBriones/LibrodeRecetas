@@ -6,10 +6,11 @@ import RecetasList from "../components/RecetasList.jsx";
 import DetallesReceta from "../components/DetallesReceta.jsx"
 import NotFound from "../components/NotFound.jsx"
 import AcerDe from "../components/AcerDe.jsx";
-
+import FormActualizar from "../components/FormActualizar.jsx";
 import {Routes, Route} from 'react-router-dom';
 import { useState } from "react";
 import recetas from "../components/recetas.json"
+
 
 /*
 
@@ -30,6 +31,7 @@ function App() {
     <Routes>
       <Route path={"/"} element={<RecetasList recetasList={recetasList} setRecetasList={setRecetasList}/>} />  
       <Route path={"/detalles/:idReceta"} element={<DetallesReceta recetasList={recetasList} />} /> 
+      <Route path={"/actualizar/:idReceta"} element={<FormActualizar recetasList={recetasList} setRecetasList={setRecetasList} /> } />
       <Route path={"/acercade"} element={<AcerDe />} />
 
       <Route path={"*"} element={<NotFound/>} />

@@ -3,7 +3,11 @@
   margin: 0 ;
   padding: 0;
   text-align: center;
-  
+  background-image: url("../src/assets/Background.jpg");
+   background-size: contain;
+   background-position: center;
+   background-repeat: no-repeat;
+   height: 400vh;
   
 }
 nav {
@@ -73,6 +77,9 @@ top: 250px
   list-style: none;
   padding-bottom: 20px;
 width: 500px;
+background-color: white;
+
+
 }
 
 .contenedor-lista{
@@ -80,8 +87,15 @@ width: 500px;
   position: relative;
   flex-direction: column;
   align-items: center;
+  bottom: 350px;
+
 }
 .formulario{
   border: 2px solid black;
+  width:50%;
 
+}
+.input{
+ display: flex;
+ position: relative;
 }

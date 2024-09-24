@@ -1,7 +1,12 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+
 
 function ItemCard({ cadaReceta, handleDelete }) {
+ const navigate= useNavigate()
+  const handleEditar= () =>{
+    navigate(`/actualizar/${cadaReceta.id}`)
+  }
   return (
     <div>
       <li key={cadaReceta.id} className="card-comida">
@@ -29,6 +34,7 @@ function ItemCard({ cadaReceta, handleDelete }) {
         >
           Delete
         </button>
+        <button onClick={()=> handleEditar()}>Editar</button>
       </li>
     </div>
   );
