@@ -8,11 +8,11 @@ function AcerDe() {
 
       <a href="https://github.com/SLAE021" style={{color:"#E35A5A", fontSize: "19px"}}> 🍖Samuel Angulo🍖: </a>
 
-      <p style={{ fontSize: "19px" }}> Trabajador esclavo la democracia bajo el yugo de la Gobernanta Gemma y su mano derecha Cristina </p>
+      <p style={{ fontSize: "19px" }}> Trabajador esclavo de la democracia bajo el yugo de la Gobernanta Gemma y su mano derecha Cristina </p>
 
       <br />
       <a href="https://github.com/Gemma-Fernandez" style={{color:"#E35A5A", fontSize: "19px"}}> 🦖Gemma Fernandez🦖:</a>
-      <p style={{ fontSize: "19px" }}> Gobernante inicial en la democracia del trabajo, empujando y maltratando al negrito del grupo </p>
+      <p style={{ fontSize: "19px" }}> Gobernante inicial en la democracia del trabajo, empujando y maltratando al morenito del gruppete </p>
 
       <br />
       <a href="https://github.com/CristinaAguileraBriones" style={{color:"#E35A5A", fontSize: "19px"}}>✨Cristina Aguilera✨: </a>

@@ -22,6 +22,7 @@ nav {
   padding:10px;
   color:#E35A5A;
   
+  
 }
 
 #logo {
@@ -38,6 +39,8 @@ nav {
   bottom: 390px;  
   margin-top: 400px;
   background-color: #E35A5A;
+  
+  
 }
 #sidebar ul li{
   list-style: none;
@@ -79,12 +82,12 @@ height: 250px;
   border-radius: 30px;
   margin: 20px;
   list-style: none;
-  padding-bottom: 20px;
-width: 500px;
-background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("../src/assets/cubierto.png") no-repeat;
-
-
-
+  padding: 20px;
+  width: 500px;
+  background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("../src/assets/cubierto.png") no-repeat;
+}
+.card-comida:hover{
+  border: 2px solid #e33b3b;
 }
 
 .contenedor-lista{
@@ -96,6 +99,10 @@ background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
   display: grid; 
 grid-template-columns: repeat(3, 1fr); /* 3 columnas del mismo tamaño */
  gap: 10px; /* Espacio entre columnas */
+
+}
+.contenedor-lista h2{
+  color:#fc5454;
 
 }
 .formulario{
